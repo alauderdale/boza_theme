@@ -574,21 +574,41 @@ ul.inline{
 //header nav
 
 .small-nav{
-
+  padding-bottom:10px!important;
+  li{
+    padding-top:12px!important;
+    @include transition-duration(.3s);
+  }
+  .logo{
+    margin-top:10px!important;
+    @include transition-duration(.3s);
+  }
 }
 
 .navbar{
+  @include transition-duration(.3s);
   font-family:$bold-font-name;
   background-color:white;
   padding-top:0;
   padding-bottom:$baseline*1.5;
   &.home-nav{
     padding-bottom:$baseline*3;
+    @include transition-duration(0s);
+    .current_page_item{
+      a{
+        color:white!important;
+      }
+    }
+    li{
+      @include transition-duration(0s);
+    }
     a{
       color:white!important;
+      @include transition-duration(0s);
     }
     a.logo{
     background:url(../images/logo_white.png) no-repeat;
+    @include transition-duration(0s);
     }
     ul.home-social-nav{
       .btn-primary{
@@ -608,11 +628,13 @@ ul.inline{
     height:52px;
     background-image:url(../images/logo_1.png);
     margin-top:$baseline*1.5;
+    @include transition-duration(.3s);
   }
   .navbar-toggle{
     margin-top:$baseline*1.5;
   }
   li{
+    @include transition-duration(.3s);
     padding-top:$baseline*1.5;
     &.social{
       a.btn{
@@ -690,6 +712,12 @@ section{
   }
   &.testimonials{
     background:url(../images/test_bg.png) center repeat-x $primary-color;
+    @include background-size(cover);
+    .testimonial{
+      h2{
+        min-height:120px;
+      }
+    }
     img.avatar{
       width:90px;
       height:auto;

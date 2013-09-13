@@ -1,10 +1,3 @@
-<?php
-/*
-Template Name: Blog
- */
-?>
-
-
 <?php get_header(); ?>
 
 <!-- /hero -->
@@ -12,17 +5,12 @@ Template Name: Blog
   <div class='container'>
     <div class='row'>
       <div class='col-lg-12'>
-      	<?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
-		        <h1>
-		          <?php echo get_post_meta($post->ID, 'hero_title', true); ?>
-		        </h1>
-		        <h2>
-		          <?php echo get_post_meta($post->ID, 'hero_sub', true); ?>
-		        </h2>
-		    	<!--end the loop-->
-          <?php endwhile; ?>
-        <?php endif; ?>
+        <h1>
+          Posts tagged
+          <span class="primary-text-color">
+            <?php single_cat_title(); ?>
+          </span>
+        </h1>
       </div>
     </div>
   </div>
@@ -33,10 +21,8 @@ Template Name: Blog
       <div class='col-lg-12'>
         <div class='row'>
           <div class='col-lg-9 col-md-9'>
-            <?php
-                $postLoop = new WP_Query( array( 'post_type' => 'post') );
-            ?>
-            	<?php while ( $postLoop->have_posts() ) : $postLoop->the_post(); ?>
+            <?php if (have_posts()) : ?>
+              <?php while (have_posts()) : the_post(); ?>
                 <article class='full-width thick-border-bottom inline-block padding-bottom double-margin-bottom'>
                   <h2>
                     <a href='<?php the_permalink(); ?>'>
@@ -71,8 +57,9 @@ Template Name: Blog
                     </em>
                   </a>
                 </article>
-            	<!--end the post loop-->
+            	<!--end the loop-->
               <?php endwhile; ?>
+            <?php endif; ?>
           </div><!-- end blog cols -->
           <div class='col-lg-2 col-md-2 col-lg-offset-1 col-md-offset-1'>
             <?php get_sidebar(); ?>

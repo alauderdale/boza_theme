@@ -26,7 +26,7 @@
   </head>
 
   <body>
-  <nav class='navbar navbar-default navbar-fixed-top main-nav' role='navigation'>
+  <nav class='navbar navbar-default navbar-fixed-top main-nav ' role='navigation'>
     <div class='container'>
       <div class='navbar-header'>
         <button class='navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
@@ -37,7 +37,7 @@
         </button>
         <a class='navbar-brand logo double-margin-right' href='<?php echo get_option('home'); ?>'></a>
       </div>
-      <div class='collapse navbar-collapse'>
+      <div class='collapse navbar-collapse navbar-ex1-collapse'>
 <!--         main menu -->
         <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
         <ul class='nav navbar-nav navbar-right'>

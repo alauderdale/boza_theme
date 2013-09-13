@@ -33,63 +33,24 @@
     
     function create_my_post_types() {
     
-        register_post_type( 'home_icon',
+        register_post_type( 'testimonial',
             array(
                 'labels' => array(
-                    'name' => __( 'Homepage Icons' ),
-                    'singular_name' => __( 'Icon' )
+                    'name' => __( 'Testimonials' ),
+                    'singular_name' => __( 'Testimonial' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
                 'public' => true,
-    
             )
         );
-
-        register_post_type( 'mission',
+        register_post_type( 'about-point',
             array(
                 'labels' => array(
-                    'name' => __( 'Mission Statement' ),
-                    'singular_name' => __( 'mission' )
-                ),
-                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
-                'public' => true,
-    
-            )
-        );
-
-        register_post_type( 'stat',
-            array(
-                'labels' => array(
-                    'name' => __( 'Stats' ),
-                    'singular_name' => __( 'stat' )
-                ),
-                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
-                'public' => true,
-    
-            )
-        );
-
-        register_post_type( 'contact',
-            array(
-                'labels' => array(
-                    'name' => __( 'Contact' ),
-                    'singular_name' => __( 'contact' )
-                ),
-                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
-                'public' => true,
-    
-            )
-        );
-
-        register_post_type( 'donate_point',
-            array(
-                'labels' => array(
-                    'name' => __( 'Donate Point' ),
+                    'name' => __( 'about point' ),
                     'singular_name' => __( 'point' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
                 'public' => true,
-    
             )
         );
     }
@@ -132,6 +93,47 @@
 	                'type' => 'text',
 	                'std' => ''
 	            ),
+	        )
+	    ),
+	    ///testimonials
+	    array(
+	        'id' => 'my-meta-box-2',
+	        'title' => 'Testimonial Options',
+	        'pages' => array('testimonial'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'Quote',
+	                'desc' => 'add the testimonial text',
+	                'id' => 'testimonial',
+	                'type' => 'textarea',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Speaker title',
+	                'desc' => 'add speakers title',
+	                'id' => 'title',
+	                'type' => 'text',
+	                'std' => ''
+	            )
+	        )
+	    ),
+	    ///about points
+	    array(
+	        'id' => 'my-meta-box-3',
+	        'title' => 'Options',
+	        'pages' => array('about-point'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'Icon Class',
+	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
+	                'id' => 'class',
+	                'type' => 'text',
+	                'std' => ''
+	            )
 	        )
 	    )
 	);
