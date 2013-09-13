@@ -3,6 +3,7 @@
 Template Name: Home
  */
 ?>
+<?php get_header(); ?>
 
 <style>
   body{
@@ -88,7 +89,7 @@ Template Name: Home
 <div class='home-slider'>
   <div class='royalSlider heroSlider rsMinW' id='full-width-slider'>
     <div class='rsContent'>
-      <img alt='' class='rsImg' src='images/slider_img.png'>
+      <img alt='' class='rsImg' src='<?php bloginfo('template_url'); ?>/images/slider_img.png'>
       <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
         <i class='icon-home'></i>
         <h2>
@@ -256,9 +257,4 @@ Template Name: Home
     </div>
   </div>
     </section>
-
-
-<?php get_header(); ?>
-
-
 <?php get_footer(); ?>

@@ -586,7 +586,6 @@ ul.inline{
 }
 
 .navbar{
-  @include transition-duration(.3s);
   font-family:$bold-font-name;
   background-color:white;
   padding-top:0;
