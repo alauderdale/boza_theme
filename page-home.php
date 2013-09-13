@@ -88,62 +88,18 @@ Template Name: Home
 <!-- /slider -->
 <div class='home-slider'>
   <div class='royalSlider heroSlider rsMinW' id='full-width-slider'>
-    <div class='rsContent'>
-      <img alt='' class='rsImg' src='<?php bloginfo('template_url'); ?>/images/slider_img.png'>
-      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
-        <i class='icon-home'></i>
-        <h2>
-          See how our
-          investment model
-          works.
-        </h2>
-        <a class='btn btn-primary btn-lg' href='blog.html'>
-          Watch the video
-        </a>
-      </div>
-    </div>
-    <div class='rsContent'>
-      <img alt='' class='rsImg' src='images/slider_img.png'>
-      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
-        <i class='icon-home'></i>
-        <h2>
-          See how our
-          investment model
-          works.
-        </h2>
-        <a class='btn btn-primary btn-lg' href='blog.html'>
-          Watch the video
-        </a>
-      </div>
-    </div>
-    <div class='rsContent'>
-      <img alt='' class='rsImg' src='images/slider_img.png'>
-      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
-        <i class='icon-home'></i>
-        <h2>
-          See how our
-          investment model
-          works.
-        </h2>
-        <a class='btn btn-primary btn-lg' href='blog.html'>
-          Watch the video
-        </a>
-      </div>
-    </div>
-    <div class='rsContent'>
-      <img alt='' class='rsImg' src='images/slider_img.png'>
-      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
-        <i class='icon-home'></i>
-        <h2>
-          See how our
-          investment model
-          works.
-        </h2>
-        <a class='btn btn-primary btn-lg' href='blog.html'>
-          Watch the video
-        </a>
-      </div>
-    </div>
+	    <div class='rsContent'>
+	      <img alt='' class='rsImg' src='<?php bloginfo('template_url'); ?>/images/slider_img.png'>
+	      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
+	        <i class='icon-home'></i>
+	        <h2>
+	          Learn about us
+	        </h2>
+	        <a class='btn btn-primary btn-lg' href='blog.html'>
+	          Watch the video
+	        </a>
+	      </div>
+	    </div>
   </div>
 </div>
 <section>
