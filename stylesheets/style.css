@@ -1,0 +1,1049 @@
+@font-face {
+  font-family: 'socialicoregular';
+  src: url("../font/socialico-webfont.eot");
+  src: url("../font/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("../font/socialico-webfont.woff") format("woff"), url("../font/socialico-webfont.ttf") format("truetype"), url("../font/socialico-webfont.svg#socialicoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_700regular';
+  src: url("../font/museosans_700-webfont.eot");
+  src: url("../font/museosans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_700-webfont.woff") format("woff"), url("../font/museosans_700-webfont.ttf") format("truetype"), url("../font/museosans_700-webfont.svg#museo_sans_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_500regular';
+  src: url("../font/museosans_500-webfont.eot");
+  src: url("../font/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_500-webfont.woff") format("woff"), url("../font/museosans_500-webfont.ttf") format("truetype"), url("../font/museosans_500-webfont.svg#museo_sans_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_900regular';
+  src: url("../font/museosans_900-webfont.eot");
+  src: url("../font/museosans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans_900-webfont.woff") format("woff"), url("../font/museosans_900-webfont.ttf") format("truetype"), url("../font/museosans_900-webfont.svg#museo_sans_900regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_300regular';
+  src: url("../font/museosans-300-webfont.eot");
+  src: url("../font/museosans-300-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-300-webfont.woff") format("woff"), url("../font/museosans-300-webfont.ttf") format("truetype"), url("../font/museosans-300-webfont.svg#museo_sans_300regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_100regular';
+  src: url("../font/museosans-100-webfont.eot");
+  src: url("../font/museosans-100-webfont.eot?#iefix") format("embedded-opentype"), url("../font/museosans-100-webfont.woff") format("woff"), url("../font/museosans-100-webfont.ttf") format("truetype"), url("../font/museosans-100-webfont.svg#museo_sans_100regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 113, ../sass/style.css.scss */
+body {
+  font: 100% "museo_sans_300regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #3b3b3b;
+  padding-top: 125px;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  line-height: 24px;
+}
+
+/* line 127, ../sass/style.css.scss */
+.contact-watermark-bg {
+  background: url(../images/watermark.png) bottom right no-repeat;
+}
+
+/* line 131, ../sass/style.css.scss */
+.stripped-bg {
+  border-top: 1px solid #f2f2f2;
+  background: url(../images/stripped_bg.png);
+}
+
+/* line 136, ../sass/style.css.scss */
+.no-bg {
+  background: transparent !important;
+}
+
+/* line 140, ../sass/style.css.scss */
+.white-bg {
+  background: white;
+}
+
+/* line 144, ../sass/style.css.scss */
+.primary-bg-color {
+  background-color: #8ab332 !important;
+}
+/* line 146, ../sass/style.css.scss */
+.primary-bg-color .border-bottom {
+  border-color: white !important;
+}
+/* line 149, ../sass/style.css.scss */
+.primary-bg-color h1 {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1) !important;
+}
+/* line 152, ../sass/style.css.scss */
+.primary-bg-color h1, .primary-bg-color h2, .primary-bg-color h3, .primary-bg-color h4, .primary-bg-color h5, .primary-bg-color h6, .primary-bg-color a, .primary-bg-color p {
+  color: white;
+}
+
+/* line 157, ../sass/style.css.scss */
+.black-bg-color {
+  background-color: #2a2929 !important;
+}
+/* line 159, ../sass/style.css.scss */
+.black-bg-color h1, .black-bg-color h2, .black-bg-color h3, .black-bg-color h4, .black-bg-color h5, .black-bg-color h6, .black-bg-color a, .black-bg-color p {
+  color: white;
+}
+
+/* line 164, ../sass/style.css.scss */
+.pic-scroll-bg {
+  background: url(../images/pics_bg.png);
+}
+
+/* line 170, ../sass/style.css.scss */
+a {
+  color: #8ab332 !important;
+}
+/* line 172, ../sass/style.css.scss */
+a:hover {
+  color: #607d23 !important;
+  text-decoration: none;
+}
+/* line 176, ../sass/style.css.scss */
+a.btn-link {
+  border-left: 3px solid #8ab332;
+  padding: 0 31.2px 0 12px;
+  background: url(../images/tiny_arrow.png) no-repeat right center;
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 183, ../sass/style.css.scss */
+a.btn-link:hover {
+  border-left: 3px solid #8ab332;
+  padding-right: 36px;
+  text-decoration: none;
+}
+
+/* line 193, ../sass/style.css.scss */
+a.video-preview {
+  position: relative;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 196, ../sass/style.css.scss */
+a.video-preview img {
+  width: 100%;
+  float: left;
+}
+/* line 200, ../sass/style.css.scss */
+a.video-preview .video-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  margin-bottom: -49px;
+}
+/* line 207, ../sass/style.css.scss */
+a.video-preview:hover:after {
+  opacity: 1;
+}
+/* line 211, ../sass/style.css.scss */
+a.video-preview:after {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 100px;
+  height: 100px;
+  content: "";
+  background: url(../images/video_icon.png) no-repeat center;
+  margin: 0 auto;
+  float: left;
+  width: 100%;
+  margin-bottom: -100px;
+  position: relative;
+  top: -260px;
+  left: 30px;
+  text-align: center;
+  opacity: .5;
+}
+
+/* line 231, ../sass/style.css.scss */
+i.circle-icon {
+  font-size: 80pt;
+  color: #8ab332;
+  background-color: #f2f2f2;
+  padding-top: 48px;
+  margin-bottom: 24px;
+  border-radius: 200px;
+  text-align: center;
+  width: 200px;
+  min-height: 200px;
+  display: inline-block;
+}
+
+/* line 246, ../sass/style.css.scss */
+.primary-text-color {
+  color: #8ab332;
+}
+
+/* line 250, ../sass/style.css.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 253, ../sass/style.css.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 24px;
+  color: #3b3b3b;
+}
+
+/* line 259, ../sass/style.css.scss */
+h1, h2, h3, h4 {
+  font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 262, ../sass/style.css.scss */
+h5, h6 {
+  font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 266, ../sass/style.css.scss */
+p {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+/* line 267, ../sass/style.css.scss */
+h1 {
+  font-size: 2.8em;
+  line-height: 48px;
+}
+
+/* line 268, ../sass/style.css.scss */
+h2 {
+  font-size: 2em;
+  line-height: 36px;
+}
+
+/* line 269, ../sass/style.css.scss */
+h3 {
+  font-size: 1.8em;
+  line-height: 36px;
+}
+
+/* line 270, ../sass/style.css.scss */
+h4 {
+  font-size: 1.4em;
+  line-height: 24px;
+}
+
+/* line 271, ../sass/style.css.scss */
+h5 {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+/* line 272, ../sass/style.css.scss */
+h6 {
+  font-size: 0.9em;
+  line-height: 24px;
+}
+
+/* line 276, ../sass/style.css.scss */
+.text-columns-2 {
+  -webkit-columns: 24px 2;
+  -moz-columns: 24px 2;
+  columns: 24px 2;
+}
+
+/* line 279, ../sass/style.css.scss */
+.text-columns-3 {
+  -webkit-columns: 24px 3;
+  -moz-columns: 24px 3;
+  columns: 24px 3;
+}
+
+/* line 282, ../sass/style.css.scss */
+.text-columns-4 {
+  -webkit-columns: 24px 4;
+  -moz-columns: 24px 4;
+  columns: 24px 4;
+}
+
+/* line 286, ../sass/style.css.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 293, ../sass/style.css.scss */
+.bold-font-name {
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 296, ../sass/style.css.scss */
+.extra-bold-font-name {
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 299, ../sass/style.css.scss */
+.regular-font-name {
+  font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 302, ../sass/style.css.scss */
+.paragraph-font-name {
+  font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 305, ../sass/style.css.scss */
+.social-font-name {
+  font-family: "socialicoregular";
+}
+
+/* line 311, ../sass/style.css.scss */
+.relative {
+  position: relative;
+}
+
+/* line 315, ../sass/style.css.scss */
+.hidden {
+  display: none;
+}
+
+/* line 319, ../sass/style.css.scss */
+.base-line-height {
+  line-height: 24px;
+}
+
+/* line 323, ../sass/style.css.scss */
+.left {
+  float: left;
+}
+
+/* line 326, ../sass/style.css.scss */
+.right {
+  float: right;
+}
+
+/* line 330, ../sass/style.css.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 334, ../sass/style.css.scss */
+img.full-width {
+  height: auto;
+}
+
+/* line 339, ../sass/style.css.scss */
+.display-block {
+  display: block;
+}
+
+/* line 343, ../sass/style.css.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 347, ../sass/style.css.scss */
+.inline {
+  display: inline;
+}
+
+/* line 351, ../sass/style.css.scss */
+ul.inline {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 354, ../sass/style.css.scss */
+ul.inline li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* line 361, ../sass/style.css.scss */
+.margin-auto {
+  margin: 0 auto;
+}
+
+/* line 364, ../sass/style.css.scss */
+.margin {
+  margin: 24px !important;
+}
+
+/* line 367, ../sass/style.css.scss */
+.margin-top {
+  margin-top: 24px !important;
+}
+
+/* line 370, ../sass/style.css.scss */
+.margin-right {
+  margin-right: 24px !important;
+}
+
+/* line 373, ../sass/style.css.scss */
+.margin-bottom {
+  margin-bottom: 24px !important;
+}
+
+/* line 376, ../sass/style.css.scss */
+.margin-left {
+  margin-left: 24px !important;
+}
+
+/* line 379, ../sass/style.css.scss */
+.double-margin-top {
+  margin-top: 48px !important;
+}
+
+/* line 382, ../sass/style.css.scss */
+.double-margin-right {
+  margin-right: 48px !important;
+}
+
+/* line 385, ../sass/style.css.scss */
+.double-margin-bottom {
+  margin-bottom: 48px !important;
+}
+
+/* line 388, ../sass/style.css.scss */
+.double-margin-left {
+  margin-left: 48px !important;
+}
+
+/* line 391, ../sass/style.css.scss */
+.triple-margin-top {
+  margin-top: 72px !important;
+}
+
+/* line 394, ../sass/style.css.scss */
+.triple-margin-right {
+  margin-right: 72px !important;
+}
+
+/* line 397, ../sass/style.css.scss */
+.triple-margin-bottom {
+  margin-bottom: 72px !important;
+}
+
+/* line 400, ../sass/style.css.scss */
+.triple-margin-left {
+  margin-left: 72px !important;
+}
+
+/* line 403, ../sass/style.css.scss */
+.half-margin-top {
+  margin-top: 12px !important;
+}
+
+/* line 406, ../sass/style.css.scss */
+.half-margin-right {
+  margin-right: 12px !important;
+}
+
+/* line 409, ../sass/style.css.scss */
+.half-margin-bottom {
+  margin-bottom: 12px !important;
+}
+
+/* line 412, ../sass/style.css.scss */
+.half-margin-left {
+  margin-left: 12px !important;
+}
+
+/* line 415, ../sass/style.css.scss */
+.quarter-margin-top {
+  margin-top: 6px !important;
+}
+
+/* line 418, ../sass/style.css.scss */
+.quarter-margin-right {
+  margin-right: 6px !important;
+}
+
+/* line 421, ../sass/style.css.scss */
+.quarter-margin-bottom {
+  margin-bottom: 6px !important;
+}
+
+/* line 424, ../sass/style.css.scss */
+.quarter-margin-left {
+  margin-left: 6px !important;
+}
+
+/* line 427, ../sass/style.css.scss */
+.no-margin {
+  margin: 0px !important;
+}
+
+/* line 430, ../sass/style.css.scss */
+.no-margin-top {
+  margin-top: 0px !important;
+}
+
+/* line 433, ../sass/style.css.scss */
+.no-margin-right {
+  margin-right: 0px !important;
+}
+
+/* line 436, ../sass/style.css.scss */
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+/* line 439, ../sass/style.css.scss */
+.no-margin-left {
+  margin-left: 0px !important;
+}
+
+/* line 442, ../sass/style.css.scss */
+.large-margin-top {
+  margin-top: 72px !important;
+}
+
+/* line 447, ../sass/style.css.scss */
+.padded {
+  padding: 24px !important;
+}
+
+/* line 450, ../sass/style.css.scss */
+.double-padding {
+  padding: 48px !important;
+}
+
+/* line 453, ../sass/style.css.scss */
+.padding-top {
+  padding-top: 24px !important;
+}
+
+/* line 456, ../sass/style.css.scss */
+.padding-right {
+  padding-right: 24px !important;
+}
+
+/* line 459, ../sass/style.css.scss */
+.padding-bottom {
+  padding-bottom: 24px !important;
+}
+
+/* line 462, ../sass/style.css.scss */
+.padding-left {
+  padding-left: 24px !important;
+}
+
+/* line 465, ../sass/style.css.scss */
+.double-padding-top {
+  padding-top: 48px !important;
+}
+
+/* line 468, ../sass/style.css.scss */
+.double-padding-right {
+  padding-right: 48px !important;
+}
+
+/* line 471, ../sass/style.css.scss */
+.double-padding-bottom {
+  padding-bottom: 48px !important;
+}
+
+/* line 474, ../sass/style.css.scss */
+.double-padding-left {
+  padding-left: 48px !important;
+}
+
+/* line 477, ../sass/style.css.scss */
+.no-padding {
+  padding: 0px !important;
+}
+
+/* line 480, ../sass/style.css.scss */
+.no-padding-top {
+  padding-top: 0px !important;
+}
+
+/* line 483, ../sass/style.css.scss */
+.no-padding-right {
+  padding-right: 0px !important;
+}
+
+/* line 486, ../sass/style.css.scss */
+.no-padding-bottom {
+  padding-bottom: 0px !important;
+}
+
+/* line 489, ../sass/style.css.scss */
+.no-padding-left {
+  padding-left: 0px !important;
+}
+
+/* line 492, ../sass/style.css.scss */
+.half-padding {
+  padding: 12px !important;
+}
+
+/* line 495, ../sass/style.css.scss */
+.half-padding-top {
+  padding-top: 12px !important;
+}
+
+/* line 498, ../sass/style.css.scss */
+.half-padding-right {
+  padding-right: 12px !important;
+}
+
+/* line 501, ../sass/style.css.scss */
+.half-padding-bottom {
+  padding-bottom: 12px !important;
+}
+
+/* line 504, ../sass/style.css.scss */
+.half-padding-left {
+  padding-left: 12px !important;
+}
+
+/* line 507, ../sass/style.css.scss */
+.quarter-padding {
+  padding: 6px !important;
+}
+
+/* line 510, ../sass/style.css.scss */
+.quarter-padding-top {
+  padding-top: 6px !important;
+}
+
+/* line 513, ../sass/style.css.scss */
+.quarter-padding-right {
+  padding-right: 6px !important;
+}
+
+/* line 516, ../sass/style.css.scss */
+.quarter-padding-bottom {
+  padding-bottom: 6px !important;
+}
+
+/* line 519, ../sass/style.css.scss */
+.quarter-padding-left {
+  padding-left: 6px !important;
+}
+
+/* line 525, ../sass/style.css.scss */
+.no-border {
+  border: none;
+}
+
+/* line 529, ../sass/style.css.scss */
+.bordered {
+  border: 1px solid #f2f2f2;
+}
+
+/* line 533, ../sass/style.css.scss */
+.border-bottom {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* line 537, ../sass/style.css.scss */
+.dark-border-top {
+  border-top: 1px solid #d9d9d9;
+}
+
+/* line 541, ../sass/style.css.scss */
+.thick-primary-border-bottom {
+  border-bottom: 5px solid #8ab332;
+}
+
+/* line 545, ../sass/style.css.scss */
+.thick-border-bottom {
+  border-bottom: 5px solid #f2f2f2;
+}
+
+/* line 551, ../sass/style.css.scss */
+.btn {
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 554, ../sass/style.css.scss */
+.btn.btn-primary {
+  background-color: #8ab332;
+  color: white !important;
+  border: none;
+}
+/* line 559, ../sass/style.css.scss */
+.btn:hover {
+  background-color: #a1c25b !important;
+}
+/* line 562, ../sass/style.css.scss */
+.btn.btn-default {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border: none;
+  color: #3b3b3b !important;
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+}
+/* line 567, ../sass/style.css.scss */
+.btn.btn-default:hover {
+  background-color: #e5e5e5 !important;
+  border: none;
+}
+
+/* line 580, ../sass/style.css.scss */
+.navbar {
+  font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 36px;
+}
+/* line 585, ../sass/style.css.scss */
+.navbar.home-nav {
+  padding-bottom: 72px;
+}
+/* line 587, ../sass/style.css.scss */
+.navbar.home-nav a {
+  color: white !important;
+}
+/* line 590, ../sass/style.css.scss */
+.navbar.home-nav a.logo {
+  background: url(../images/logo_white.png) no-repeat;
+}
+/* line 594, ../sass/style.css.scss */
+.navbar.home-nav ul.home-social-nav .btn-primary {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+}
+/* line 600, ../sass/style.css.scss */
+.navbar a {
+  color: #3b3b3b !important;
+}
+/* line 603, ../sass/style.css.scss */
+.navbar .btn {
+  padding: 8px 24px;
+}
+/* line 606, ../sass/style.css.scss */
+.navbar a.logo {
+  width: 131px;
+  height: 52px;
+  background-image: url(../images/logo_1.png);
+  margin-top: 36px;
+}
+/* line 612, ../sass/style.css.scss */
+.navbar .navbar-toggle {
+  margin-top: 36px;
+}
+/* line 615, ../sass/style.css.scss */
+.navbar li {
+  padding-top: 36px;
+}
+/* line 618, ../sass/style.css.scss */
+.navbar li.social a.btn {
+  background-color: black;
+  border-radius: 0px !important;
+  margin-right: 6px;
+  font-family: "socialicoregular";
+  font-size: 20pt;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: white !important;
+}
+/* line 630, ../sass/style.css.scss */
+.navbar .active, .navbar .current_page_item {
+  box-shadow: inset 0 5px #8ab332;
+  background-color: transparent !important;
+}
+/* line 634, ../sass/style.css.scss */
+.navbar .active a, .navbar .current_page_item a {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+/* line 643, ../sass/style.css.scss */
+footer {
+  background-color: #f2f2f2;
+}
+/* line 645, ../sass/style.css.scss */
+footer a {
+  color: #3b3b3b !important;
+}
+/* line 647, ../sass/style.css.scss */
+footer a:hover {
+  color: #0b0b0b !important;
+}
+
+/* line 655, ../sass/style.css.scss */
+section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+/* line 659, ../sass/style.css.scss */
+section.home .border-bottom {
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1) !important;
+}
+/* line 662, ../sass/style.css.scss */
+section.home h1 {
+  border-bottom: none !important;
+}
+/* line 667, ../sass/style.css.scss */
+section.home-meta .home-post {
+  border-bottom: none !important;
+}
+/* line 669, ../sass/style.css.scss */
+section.home-meta .home-post:last-of-type {
+  border-bottom: 1px solid #f2f2f2 !important;
+}
+/* line 672, ../sass/style.css.scss */
+section.home-meta .home-post .right-divider {
+  border-right: 1px dashed #bbbbbb;
+}
+/* line 677, ../sass/style.css.scss */
+section.hero {
+  background-color: #f2f2f2;
+}
+/* line 679, ../sass/style.css.scss */
+section.hero h1 {
+  font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
+  font-size: 5.4em;
+  line-height: 96px;
+  border-bottom: 5px solid #8ab332;
+  padding-bottom: 24px;
+  word-break: break-word;
+}
+/* line 687, ../sass/style.css.scss */
+section.hero h2 {
+  font-family: "museo_sans_100regular", Helvetica, Arial, sans-serif;
+}
+/* line 691, ../sass/style.css.scss */
+section.testimonials {
+  background: url(../images/test_bg.png) center repeat-x #8ab332;
+}
+/* line 693, ../sass/style.css.scss */
+section.testimonials img.avatar {
+  width: 90px;
+  height: auto;
+}
+/* line 698, ../sass/style.css.scss */
+section.donate {
+  background: url(../images/donate_bg.png) center repeat-x #8ab332;
+}
+
+/* line 706, ../sass/style.css.scss */
+.post img {
+  margin: 24px;
+}
+
+/* line 714, ../sass/style.css.scss */
+aside.sidebar h5 {
+  border-bottom: 1px solid #8ab332;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+/* line 725, ../sass/style.css.scss */
+a.social-button {
+  border: 1px solid #3b3b3b;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  padding: 48px 24px;
+  border-radius: 300px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  margin-bottom: 24px;
+}
+/* line 734, ../sass/style.css.scss */
+a.social-button i {
+  font-size: 40pt;
+  color: black;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 739, ../sass/style.css.scss */
+a.social-button h3 {
+  font-size: 1.2em;
+  line-height: 24px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 744, ../sass/style.css.scss */
+a.social-button:hover {
+  background-color: black;
+}
+/* line 747, ../sass/style.css.scss */
+a.social-button:hover i, a.social-button:hover h3 {
+  color: white !important;
+}
+
+/* line 753, ../sass/style.css.scss */
+ul.social {
+  font-family: "socialicoregular";
+}
+/* line 755, ../sass/style.css.scss */
+ul.social li {
+  float: left;
+}
+/* line 757, ../sass/style.css.scss */
+ul.social li a {
+  color: white !important;
+  background-color: #8ab332;
+  padding: 6px 12px;
+  line-height: 48px;
+  font-size: 2em;
+  border-radius: 300px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 765, ../sass/style.css.scss */
+ul.social li a:hover {
+  background-color: #6e8f28;
+}
+
+/* line 774, ../sass/style.css.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 782, ../sass/style.css.scss */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 783, ../sass/style.css.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 791, ../sass/style.css.scss */
+.home-slider h1, .home-slider h2, .home-slider h3, .home-slider h4, .home-slider h5, .home-slider h6, .home-slider p, .home-slider a, .home-slider i {
+  color: white;
+}
+/* line 794, ../sass/style.css.scss */
+.home-slider i {
+  font-size: 40pt;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+/* line 799, ../sass/style.css.scss */
+.home-slider #full-width-slider {
+  width: 100%;
+}
+/* line 802, ../sass/style.css.scss */
+.home-slider .coloredBlock {
+  padding: 12px;
+  background: rgba(255, 0, 0, 0.6);
+  color: #FFF;
+  width: 200px;
+  left: 20%;
+}
+/* line 809, ../sass/style.css.scss */
+.home-slider .infoBlock {
+  color: #FFF;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  max-width: 25%;
+  padding-bottom: 0;
+  margin: 0 auto;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  padding: 40px;
+  border-radius: 20px;
+}
+/* line 825, ../sass/style.css.scss */
+.home-slider .infoBlockLeftBlack {
+  color: #FFF;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+}
+/* line 831, ../sass/style.css.scss */
+.home-slider .fullWidth {
+  max-width: 1400px;
+  margin: 0 auto 24px;
+}
+@media screen and (min-width: 960px) and (min-height: 660px) {
+  /* line 838, ../sass/style.css.scss */
+  .home-slider .heroSlider .rsOverflow,
+  .home-slider .royalSlider.heroSlider {
+    height: 520px !important;
+  }
+}
+@media screen and (min-width: 960px) and (min-height: 1000px) {
+  /* line 845, ../sass/style.css.scss */
+  .home-slider .heroSlider .rsOverflow,
+  .home-slider .royalSlider.heroSlider {
+    height: 660px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  /* line 850, ../sass/style.css.scss */
+  .home-slider .infoBlockLeftBlack {
+    border-radius: 0;
+  }
+  /* line 854, ../sass/style.css.scss */
+  .home-slider .royalSlider.heroSlider,
+  .home-slider .royalSlider.heroSlider .rsOverflow {
+    height: 300px !important;
+  }
+  /* line 857, ../sass/style.css.scss */
+  .home-slider .infoBlock {
+    padding: 10px;
+    height: 100%;
+    max-height: 100%;
+    min-width: 40%;
+    left: 0;
+    top: 0;
+    right: auto;
+    font-size: 12px;
+  }
+  /* line 867, ../sass/style.css.scss */
+  .home-slider .infoBlock h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
