@@ -972,7 +972,7 @@ a.social-button:hover {
   background-color: black;
 }
 /* line 774, ../sass/style.css.scss */
-a.social-button:hover i, a.social-button:hover h3 {
+a.social-button:hover i, a.social-button:hover h3, a.social-button:hover h3 p {
   color: white !important;
 }
 

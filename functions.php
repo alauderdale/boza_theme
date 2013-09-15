@@ -11,6 +11,8 @@
   //main nav
   
   register_nav_menu( 'main_nav', __( 'Main navigation menu', 'mytheme' ) );
+  register_nav_menu( 'footer1', __( '1st navigation menu', 'mytheme' ) );
+  register_nav_menu( 'footer2', __( '2nd navigation menu in footer', 'mytheme' ) );
 
       /*** Register our sidebars and widgetized areas.**/
     function wli_widgets_init() {
@@ -43,10 +45,30 @@
                 'public' => true,
             )
         );
+        register_post_type( 'home-preview',
+            array(
+                'labels' => array(
+                    'name' => __( 'home preview' ),
+                    'singular_name' => __( 'home preview' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+            )
+        );
         register_post_type( 'about-point',
             array(
                 'labels' => array(
                     'name' => __( 'about point' ),
+                    'singular_name' => __( 'point' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+            )
+        );
+        register_post_type( 'social-block',
+            array(
+                'labels' => array(
+                    'name' => __( 'Social block' ),
                     'singular_name' => __( 'point' )
                 ),
                 'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
@@ -169,6 +191,54 @@
 	                'name' => 'Custom Button Link',
 	                'desc' => 'enter link for the slider call to action. If blank will link to the post',
 	                'id' => 'slider_cta_link',
+	                'type' => 'text',
+	                'std' => ''
+	            )
+	        )
+	    ),
+			///home preview
+	    array(
+	        'id' => 'my-meta-box-5',
+	        'title' => 'Homepage Featured Post Options',
+	        'pages' => array('home-preview'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'Link Title',
+	                'desc' => 'enter the text for the slider call to action',
+	                'id' => 'title',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Link URL',
+	                'desc' => 'enter link for the post',
+	                'id' => 'link',
+	                'type' => 'text',
+	                'std' => ''
+	            )
+	        )
+	    ),
+	    ///home preview
+	    array(
+	        'id' => 'my-meta-box-6',
+	        'title' => 'Options',
+	        'pages' => array('social-block'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'Icon Class',
+	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
+	                'id' => 'class',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Link URL',
+	                'desc' => 'enter link for the post',
+	                'id' => 'link',
 	                'type' => 'text',
 	                'std' => ''
 	            )

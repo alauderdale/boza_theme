@@ -20,7 +20,7 @@
     </div>
   </div>
 </section>
-<section class='blog'>
+<section class='page'>
   <div class='container'>
     <div class='row'>
       <div class='col-lg-12'>

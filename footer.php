@@ -29,23 +29,7 @@
                     Give
                   </h5>
                   <nav class='margin-bottom'>
-                    <ul class='list-unstyled'>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          Donate
-                        </a>
-                      </li>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          Counsel Advice
-                        </a>
-                      </li>
-                      <li class='no-margin-bottom'>
-                        <a href='volunteer.html'>
-                          Volunteer
-                        </a>
-                      </li>
-                    </ul>
+                    <?php wp_nav_menu( array('theme_location' => 'footer1' , 'container' => '', 'items_wrap' => '<ul class="list-unstyled">%3$s</ul>' )); ?>
                   </nav>
                 </div>
                 <div class='col-lg-2 col-md-2 col-sm-2'>
@@ -53,28 +37,7 @@
                     Get Educated
                   </h5>
                   <nav class='margin-bottom'>
-                    <ul class='list-unstyled'>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          Home
-                        </a>
-                      </li>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          About
-                        </a>
-                      </li>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          Videos
-                        </a>
-                      </li>
-                      <li class='no-margin-bottom'>
-                        <a href='#'>
-                          Blog
-                        </a>
-                      </li>
-                    </ul>
+                                        <?php wp_nav_menu( array('theme_location' => 'footer2' , 'container' => '', 'items_wrap' => '<ul class="list-unstyled">%3$s</ul>' )); ?>
                   </nav>
                 </div>
                 <div class='col-lg-3 col-md-3 col-sm-3'>
@@ -122,14 +85,8 @@
                   <h5 class='extra-bold-font-name'>
                     Contact
                   </h5>
-                  <ul class='list-unstyled'>
-                    <li class='no-margin-bottom'>
-                      p.303.333.4455
-                    </li>
-                    <li class='no-margin-bottom'>
-                      e. info@igp.com
-                    </li>
-                  </ul>
+                  <?php if ( dynamic_sidebar('contact') ) : ?>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>

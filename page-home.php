@@ -148,40 +148,23 @@ Template Name: Home
 <section class='stripped-bg home-meta'>
   <div class='container white-bg double-padding bordered'>
     <div class='row'>
-      <div class='col-lg-4 col-md-4'>
-        <div class='padded'>
-          <h2 class='double-margin-bottom'>
-            People
-          </h2>
-          <img class='img-circle margin-bottom' src='http://placehold.it/220x220'>
-          <h5>
-            Global Reach
-          </h5>
-          <p>
-            Quisque gravida massa at est consequat rhoncus. Etiam at maat id massa. Dnec scelerisque erat ac justo ele.
-          </p>
-          <a class='btn-link'>
-            Get Involved
-          </a>
-        </div>
-      </div>
-      <div class='col-lg-4 col-md-4'>
-        <div class='padded'>
-          <h2 class='double-margin-bottom'>
-            Leaders
-          </h2>
-          <img class='img-circle margin-bottom' src='http://placehold.it/220x220'>
-          <h5>
-            A Higher Plan
-          </h5>
-          <p>
-            Quisque gravida massa at est consequat rhoncus. Etiam at maat id massa. Dnec scelerisque erat ac justo ele.
-          </p>
-          <a class='btn-link'>
-            Read About Our Mission
-          </a>
-        </div>
-      </div>
+    	<?php
+        $postLoop = new WP_Query( array( 'post_type' => 'home-preview') );
+      ?>
+    	<?php while ( $postLoop->have_posts() ) : $postLoop->the_post(); ?>
+	      <div class='col-lg-4 col-md-4'>
+	        <div class='padded'>
+	          <h2 class='double-margin-bottom'>
+	            <?php the_title(); ?> 
+	          </h2>
+	          <img class='img-circle margin-bottom' src='http://placehold.it/220x220'>
+	          <?php the_content(); ?> 
+	          <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>" class='btn-link'>
+	            <?php echo get_post_meta($post->ID, 'title', true); ?>
+	          </a>
+	        </div>
+	      </div>
+    	<?php endwhile; ?>
       <div class='col-lg-4 col-md-4'>
         <div class='padded'>
           <h2 class='double-margin-bottom'>
@@ -215,5 +198,6 @@ Template Name: Home
       </div>
     </div>
   </div>
-    </section>
+</section>
+<?php include 'social-section.php'; ?>
 <?php get_footer(); ?>
