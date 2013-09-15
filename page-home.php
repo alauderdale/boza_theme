@@ -88,18 +88,38 @@ Template Name: Home
 <!-- /slider -->
 <div class='home-slider'>
   <div class='royalSlider heroSlider rsMinW' id='full-width-slider'>
-	    <div class='rsContent'>
-	      <img alt='' class='rsImg' src='<?php bloginfo('template_url'); ?>/images/slider_img.png'>
-	      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
-	        <i class='icon-home'></i>
-	        <h2>
-	          Learn about us
-	        </h2>
-	        <a class='btn btn-primary btn-lg' href='blog.html'>
-	          Watch the video
-	        </a>
-	      </div>
-	    </div>
+			<?php query_posts('category_name=FEATURED&showposts=5');
+				while (have_posts()) : the_post();
+			// do whatever you want
+			?>
+		    <div class='rsContent'>
+		      <img alt='' class='rsImg' src='<?php
+                        $imgsrc2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+                        echo $imgsrc2[0];
+                        ?>'>
+		      <div class='infoBlock infoBlockLeftBlack rsABlock rsNoDrag' data-fade-effect='' data-move-effect='bottom' data-move-offset='10' data-speed='200'>
+		        <i class='<?php echo get_post_meta($post->ID, 'class', true); ?>'></i>
+		        <h2>
+	          	<?php echo get_post_meta($post->ID, 'slider_title', true); ?>
+		        </h2>
+
+		        <?php if ( get_post_meta( get_the_ID(), 'slider_cta_link', true ) ) : ?>
+			        <a class='btn btn-primary btn-lg' href='<?php echo get_post_meta($post->ID, 'slider_cta_link', true); ?>'>
+		        <?php else: ?>
+			        <a class='btn btn-primary btn-lg' href='<?php the_permalink(); ?>'>
+			      <?php endif; ?>
+
+		        	<!-- check if there is a title -->
+			        <?php if ( get_post_meta( get_the_ID(), 'slider_cta_title', true ) ) : ?>
+			         <?php echo get_post_meta($post->ID, 'slider_cta_title', true); ?>
+			        <?php else: ?>
+			        	Learn More
+			        <?php endif; ?>
+		        </a>
+		      </div>
+		    </div>
+			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
   </div>
 </div>
 <section>
@@ -109,12 +129,17 @@ Template Name: Home
         <h2 class='padding-bottom thick-primary-border-bottom'>
           We are BOZA
         </h2>
-        <p>
-          GP is enim nisl, luctus sit amet cursus nec, condimentuectus. Quisque gravida massa at est consequat rhoncus. Etiam at maat id massa. Dnec scelerisque erat ac justo ele.GP is enim nisl, luctus sit amet cursus nec, condimentuectus. Quisque gravida massa at est consequat rhoncus. Etiam at maat id massa. Dnec scelerisque erat ac justo ele.
-        </p>
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+        		<?php the_content(); ?> 
+        	<!--end the loop-->
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
       <div class='col-lg-5 col-md-5'>
-        <img class='pull-right' src='images/kid.png'>
+        <?php if ( has_post_thumbnail() ): // check if the post has a Post Thumbnail assigned to it.?>
+          <?php  the_post_thumbnail('full', array('class' => 'pull-right')); ?>
+      	<?php endif; ?>
       </div>
     </div>
   </div>

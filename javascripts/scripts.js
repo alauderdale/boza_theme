@@ -15,7 +15,7 @@ $(document).ready(function(){
 	//slider
   $('#full-width-slider').royalSlider({
     arrowsNav: true,
-    loop: false,
+    loop: true,
     keyboardNavEnabled: true,
     controlsInside: false,
     imageScaleMode: 'fill',

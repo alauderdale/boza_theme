@@ -135,6 +135,44 @@
 	                'std' => ''
 	            )
 	        )
+	    ),
+	    ///post
+	    array(
+	        'id' => 'my-meta-box-4',
+	        'title' => 'Homepage Featured Post Options',
+	        'pages' => array('post'), // multiple post types
+	        'context' => 'normal',
+	        'priority' => 'high',
+	        'fields' => array(
+	            array(
+	                'name' => 'Icon Class',
+	                'desc' => 'enter the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">font-awesome</a> icon class ex: icon-home',
+	                'id' => 'class',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Homepage Slider title',
+	                'desc' => 'enter the text for the homepage slider',
+	                'id' => 'slider_title',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Button Title',
+	                'desc' => 'enter the text for the slider call to action',
+	                'id' => 'slider_cta_title',
+	                'type' => 'text',
+	                'std' => ''
+	            ),
+	            array(
+	                'name' => 'Custom Button Link',
+	                'desc' => 'enter link for the slider call to action. If blank will link to the post',
+	                'id' => 'slider_cta_link',
+	                'type' => 'text',
+	                'std' => ''
+	            )
+	        )
 	    )
 	);
 
