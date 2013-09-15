@@ -135,6 +135,7 @@ Template Name: Home
         	<!--end the loop-->
           <?php endwhile; ?>
         <?php endif; ?>
+        <?php wp_reset_query(); ?>
       </div>
       <div class='col-lg-5 col-md-5'>
         <?php if ( has_post_thumbnail() ): // check if the post has a Post Thumbnail assigned to it.?>
@@ -187,50 +188,27 @@ Template Name: Home
             New & Events
           </h2>
           <div class='home-news margin-bottom'>
-            <div class='home-post padded bordered'>
-              <div class='row'>
-                <div class='col-lg-7 col-md-7 col-xs-7 right-divider'>
-                  <a href='single.html'>
-                    Im the title of a very interesting blog post
-                  </a>
-                </div>
-                <div class='col-lg-5 col-md-5 col-sm-5 col-xs-5'>
-                  <h6>
-                    Jul 22, 2012
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class='home-post padded bordered'>
-              <div class='row'>
-                <div class='col-lg-7 col-md-7 col-xs-7 right-divider'>
-                  <a href='single.html'>
-                    Im the title of a very interesting blog post
-                  </a>
-                </div>
-                <div class='col-lg-5 col-md-5 col-sm-5 col-xs-5'>
-                  <h6>
-                    Jul 22, 2012
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class='home-post padded bordered'>
-              <div class='row'>
-                <div class='col-lg-7 col-md-7 col-xs-7 right-divider'>
-                  <a href='single.html'>
-                    Im the title of a very interesting blog post
-                  </a>
-                </div>
-                <div class='col-lg-5 col-md-5 col-sm-5 col-xs-5'>
-                  <h6>
-                    Jul 22, 2012
-                  </h6>
-                </div>
-              </div>
-            </div>
+          	<?php query_posts('showposts=3');
+							while (have_posts()) : the_post();
+						// do whatever you want
+						?>
+	            <div class='home-post padded bordered'>
+	              <div class='row'>
+	                <div class='col-lg-7 col-md-7 col-xs-7 right-divider'>
+	                  <a href='<?php the_permalink(); ?>'>
+	                    <?php the_title(); ?> 
+	                  </a>
+	                </div>
+	                <div class='col-lg-5 col-md-5 col-sm-5 col-xs-5'>
+	                  <h6>
+	                     <?php the_time('F j, Y'); ?> 
+	                  </h6>
+	                </div>
+	              </div>
+	            </div>
+            <?php endwhile; ?>
           </div>
-          <a class='btn-link' href='blog.html'>
+          <a class='btn-link' href='index.php?pagename=blog'>
             See all the news
           </a>
         </div>

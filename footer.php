@@ -4,7 +4,7 @@
           <div class='row'>
             <div class='col-lg-12'>
               <div class='row'>
-                <div class='col-lg-3 col-md-3'>
+                <div class='col-lg-3 col-md-3 col-sm-3'>
                   <h5 class='extra-bold-font-name'>
                     Twitter
                   </h5>
@@ -24,7 +24,7 @@
                     </a>
                   </p>
                 </div>
-                <div class='col-lg-2 col-md-2'>
+                <div class='col-lg-2 col-md-2 col-sm-2'>
                   <h5 class='extra-bold-font-name'>
                     Give
                   </h5>
@@ -48,7 +48,7 @@
                     </ul>
                   </nav>
                 </div>
-                <div class='col-lg-2 col-md-2'>
+                <div class='col-lg-2 col-md-2 col-sm-2'>
                   <h5 class='extra-bold-font-name'>
                     Get Educated
                   </h5>
@@ -77,7 +77,7 @@
                     </ul>
                   </nav>
                 </div>
-                <div class='col-lg-3 col-md-3'>
+                <div class='col-lg-3 col-md-3 col-sm-3'>
                   <h5 class='extra-bold-font-name'>
                     Stay Connected
                   </h5>
