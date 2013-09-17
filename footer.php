@@ -50,7 +50,11 @@
                         Sign up for our newsletter to
                         recieve updates and info
                       </p>
-                      <input placeholder='ex:john@doe.com'>
+                      <div class="row">
+                        <div class="half-margin-left col-lg-7 no-padding-right no-padding-left inline">
+                          <input class="form-control" placeholder='ex:john@doe.com'>
+                        </div>
+                      </div>
                     </div>
                     <button class='btn btn-primary' type='submit'>
                       submit
