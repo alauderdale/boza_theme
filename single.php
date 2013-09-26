@@ -39,8 +39,8 @@
                   </div>
                   <div class='pull-right'>
                     <i class='icon-comment-alt'></i>
-                    <a href='#'>
-                      3 comments
+                    <a href='#comments'>
+                      <?php comments_number( 'no comments', 'one comment', '% comments' ); ?>
                     </a>
                   </div>
                 </div>
@@ -59,4 +59,5 @@
     </div>
   </div>
 </section>
+<?php comments_template(); ?>
 <?php get_footer(); ?>

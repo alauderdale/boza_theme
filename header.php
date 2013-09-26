@@ -24,6 +24,7 @@
         margin-top:0!important;
       }
     </style>
+    <?php echo get_option('nt_custom_css'); ?>
   </head>
 
   <body>
@@ -43,17 +44,17 @@
         <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
         <ul class='nav navbar-nav navbar-right'>
           <li class='social'>
-            <a class='btn btn-primary btn-sm' href='#'>
+            <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_facebook'); ?>'>
               F
             </a>
           </li>
           <li class='social'>
-            <a class='btn btn-primary btn-sm' href='#'>
+            <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_twitter'); ?>'>
               T
             </a>
           </li>
           <li>
-            <a class='btn btn-primary btn-sm' href='donate.html'>
+            <a class='btn btn-primary btn-sm' href='index.php?pagename=donate'>
               Donate
             </a>
           </li>

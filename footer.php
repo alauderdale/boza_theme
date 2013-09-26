@@ -68,7 +68,7 @@
                   <nav>
                     <ul class='list-unstyled'>
                       <li class='no-margin-bottom'>
-                        <a href='#'>
+                        <a href='<?php echo get_option('nt_facebook'); ?>'>
                           <span class='social-font-name pull-left half-margin-right extra-bold-font-name' style='font-size:1.4em;'>
                             F
                           </span>
@@ -76,7 +76,7 @@
                         </a>
                       </li>
                       <li class='no-margin-bottom'>
-                        <a href='#'>
+                        <a href='<?php echo get_option('nt_twitter'); ?>'>
                           <span class='social-font-name pull-left half-margin-right extra-bold-font-name' style='font-size:1.4em;'>
                             T
                           </span>

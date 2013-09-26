@@ -66,10 +66,14 @@ Template Name: Get Involved
             <h2>
               Volunteer
             </h2>
-            <p>
-              GP is enim nisl, luctus sit amet cursus nec, condimentum in lectuvvvvs. Quisque gravida massa at est consequat rhoncus. Etiam at maat id massa. Dnec scelerisque erat ac justo ele.
-            </p>
-            <a class='btn btn-default btn-lg' href='#'>
+            <?php if (have_posts()) : ?>
+              <?php while (have_posts()) : the_post(); ?>
+                <p>
+                  <?php echo get_post_meta($post->ID, 'sub_text', true); ?> 
+                </p>
+              <?php endwhile; ?>
+            <?php endif; ?>
+            <a class='btn btn-default btn-lg' href='index.php?pagename=donate'>
               Take a Stand and Give Back
             </a>
           </div>
