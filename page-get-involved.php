@@ -73,7 +73,7 @@ Template Name: Get Involved
                 </p>
               <?php endwhile; ?>
             <?php endif; ?>
-            <a class='btn btn-default btn-lg' href='index.php?pagename=donate'>
+            <a class='btn btn-default btn-lg' href='index.php?pagename=volunteer'>
               Take a Stand and Give Back
             </a>
           </div>

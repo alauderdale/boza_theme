@@ -12,34 +12,32 @@ if ( post_password_required() ) { ?>
 		<div class="row">
 			<div class="col-lg-9 col-md-9">
 				<div class="comments-container">
-					<?php
-						$args = array(
-						   // args here
-						);
+					<?php if($comments): ?>  
+					    <?php foreach ($comments as $comment) : ?>  
 
-						// The Query
-						$comments_query = new WP_Comment_Query;
-						$comments = $comments_query->query( $args );
+					        <div class="media margin-bottom"> 
+					        	<div class="pull-left margin-right">
+					        		<?php echo get_avatar( ); ?> 
+					        	</div>
+					        	<div class="media-body">
+					        		<p class="media-heading">
+					        			<strong>
+					        				<?php comment_author(); ?>
+					        			</strong>
+					        			on
+					        			<?php comment_date(); ?>
+					        		</p>
+					        		<div class="comment-text">
+					        			<?php comment_text(); ?>
+					        		</div>
+					        	</div>
+					        </div>
 
-						// Comment Loop
-						if ( $comments ) {
-							foreach ( $comments as $comment ) {
-								echo '<div class="media margin-bottom">';
-								echo '<div class="pull-left margin-right">';
-								echo get_avatar();
-								echo '</div>';
-								echo '<div class="media-body">';
-								echo '<p class="media-heading"><strong>' . $comment->comment_author. '</strong>'.' on ';
-								echo comment_date();
-								echo '</p>';
-								echo '<p class="comment-text">' . $comment->comment_content . '</p>';
-								echo '</div>';
-								echo '</div>';
-							}
-						} else {
-							echo 'No comments found.';
-						}
-					?>
+ 
+					    <?php endforeach; ?>  
+					<?php else : ?>  
+						<p>No comments yet</p> 
+					<?php endif; ?>  
 				</div>
 				<div class="comment-form">
 					<?php if ( comments_open() ) : ?>
