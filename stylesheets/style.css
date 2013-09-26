@@ -920,19 +920,26 @@ section.donate {
   background: url(../images/donate_bg.png) center repeat-x #8ab332;
 }
 
-/* line 733, ../sass/style.css.scss */
+/* line 732, ../sass/style.css.scss */
+.carousel-indicators li, .carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+/* line 742, ../sass/style.css.scss */
 .post img {
   margin: 24px;
 }
 
-/* line 741, ../sass/style.css.scss */
+/* line 750, ../sass/style.css.scss */
 aside.sidebar h5 {
   border-bottom: 1px solid #8ab332;
   padding-bottom: 12px;
   margin-bottom: 12px;
 }
 
-/* line 752, ../sass/style.css.scss */
+/* line 761, ../sass/style.css.scss */
 a.social-button {
   border: 1px solid #3b3b3b;
   display: inline-block;
@@ -947,7 +954,7 @@ a.social-button {
   transition-duration: 0.3s;
   margin-bottom: 24px;
 }
-/* line 761, ../sass/style.css.scss */
+/* line 770, ../sass/style.css.scss */
 a.social-button i {
   font-size: 40pt;
   color: black;
@@ -957,7 +964,7 @@ a.social-button i {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 766, ../sass/style.css.scss */
+/* line 775, ../sass/style.css.scss */
 a.social-button h3 {
   font-size: 1.2em;
   line-height: 24px;
@@ -967,24 +974,24 @@ a.social-button h3 {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 771, ../sass/style.css.scss */
+/* line 780, ../sass/style.css.scss */
 a.social-button:hover {
   background-color: black;
 }
-/* line 774, ../sass/style.css.scss */
+/* line 783, ../sass/style.css.scss */
 a.social-button:hover i, a.social-button:hover h3, a.social-button:hover h3 p {
   color: white !important;
 }
 
-/* line 780, ../sass/style.css.scss */
+/* line 789, ../sass/style.css.scss */
 ul.social {
   font-family: "socialicoregular";
 }
-/* line 782, ../sass/style.css.scss */
+/* line 791, ../sass/style.css.scss */
 ul.social li {
   float: left;
 }
-/* line 784, ../sass/style.css.scss */
+/* line 793, ../sass/style.css.scss */
 ul.social li a {
   color: white !important;
   background-color: #8ab332;
@@ -998,12 +1005,12 @@ ul.social li a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 792, ../sass/style.css.scss */
+/* line 801, ../sass/style.css.scss */
 ul.social li a:hover {
   background-color: #6e8f28;
 }
 
-/* line 801, ../sass/style.css.scss */
+/* line 810, ../sass/style.css.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -1013,33 +1020,33 @@ ul.social li a:hover {
   height: 0;
 }
 
-/* line 809, ../sass/style.css.scss */
+/* line 818, ../sass/style.css.scss */
 * html .clearfix {
   zoom: 1;
 }
 
 /* IE6 */
-/* line 810, ../sass/style.css.scss */
+/* line 819, ../sass/style.css.scss */
 *:first-child + html .clearfix {
   zoom: 1;
 }
 
 /* IE7 */
-/* line 818, ../sass/style.css.scss */
+/* line 827, ../sass/style.css.scss */
 .home-slider h1, .home-slider h2, .home-slider h3, .home-slider h4, .home-slider h5, .home-slider h6, .home-slider p, .home-slider a, .home-slider i {
   color: white;
 }
-/* line 821, ../sass/style.css.scss */
+/* line 830, ../sass/style.css.scss */
 .home-slider i {
   font-size: 40pt;
   margin-bottom: 12px;
   display: inline-block;
 }
-/* line 826, ../sass/style.css.scss */
+/* line 835, ../sass/style.css.scss */
 .home-slider #full-width-slider {
   width: 100%;
 }
-/* line 829, ../sass/style.css.scss */
+/* line 838, ../sass/style.css.scss */
 .home-slider .coloredBlock {
   padding: 12px;
   background: rgba(255, 0, 0, 0.6);
@@ -1047,15 +1054,15 @@ ul.social li a:hover {
   width: 200px;
   left: 20%;
 }
-/* line 836, ../sass/style.css.scss */
+/* line 845, ../sass/style.css.scss */
 .home-slider .infoBlock {
   color: #FFF;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0px;
   right: 0px;
   text-align: center;
-  max-width: 25%;
+  max-width: 35%;
   padding-bottom: 0;
   margin: 0 auto;
   background: #FFF;
@@ -1064,42 +1071,42 @@ ul.social li a:hover {
   padding: 40px;
   border-radius: 20px;
 }
-/* line 852, ../sass/style.css.scss */
+/* line 861, ../sass/style.css.scss */
 .home-slider .infoBlockLeftBlack {
   color: #FFF;
   background: #000;
   background: rgba(0, 0, 0, 0.75);
 }
-/* line 858, ../sass/style.css.scss */
+/* line 867, ../sass/style.css.scss */
 .home-slider .fullWidth {
   max-width: 1400px;
   margin: 0 auto 24px;
 }
 @media screen and (min-width: 960px) and (min-height: 660px) {
-  /* line 865, ../sass/style.css.scss */
+  /* line 874, ../sass/style.css.scss */
   .home-slider .heroSlider .rsOverflow,
   .home-slider .royalSlider.heroSlider {
     height: 520px !important;
   }
 }
 @media screen and (min-width: 960px) and (min-height: 1000px) {
-  /* line 872, ../sass/style.css.scss */
+  /* line 881, ../sass/style.css.scss */
   .home-slider .heroSlider .rsOverflow,
   .home-slider .royalSlider.heroSlider {
     height: 660px !important;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 800px) {
-  /* line 877, ../sass/style.css.scss */
+  /* line 886, ../sass/style.css.scss */
   .home-slider .infoBlockLeftBlack {
     border-radius: 0;
   }
-  /* line 881, ../sass/style.css.scss */
+  /* line 890, ../sass/style.css.scss */
   .home-slider .royalSlider.heroSlider,
   .home-slider .royalSlider.heroSlider .rsOverflow {
     height: 300px !important;
   }
-  /* line 884, ../sass/style.css.scss */
+  /* line 893, ../sass/style.css.scss */
   .home-slider .infoBlock {
     padding: 10px;
     height: 100%;
@@ -1110,7 +1117,7 @@ ul.social li a:hover {
     right: auto;
     font-size: 12px;
   }
-  /* line 894, ../sass/style.css.scss */
+  /* line 903, ../sass/style.css.scss */
   .home-slider .infoBlock h3 {
     font-size: 14px;
     line-height: 17px;

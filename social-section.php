@@ -17,7 +17,7 @@
         $socialLoop = new WP_Query( array( 'post_type' => 'social-block') );
       ?>
       <?php while ( $socialLoop->have_posts() ) : $socialLoop->the_post(); ?>
-        <div class='col-lg-3 col-md-3 text-center'>
+        <div class='col-lg-3 col-md-3  text-center'>
           <a class='social-button' href='<?php echo get_post_meta($post->ID, 'link', true); ?>'>
             <i class='<?php echo get_post_meta($post->ID, 'class', true); ?> margin-bottom pull-left full-width'></i>
             <h3 class='text-uppercase'>

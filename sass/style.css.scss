@@ -727,6 +727,15 @@ section{
   }
 }
 
+//test slider
+
+.carousel-indicators li,.carousel-indicators .active{
+width: 20px;
+height: 20px;
+border-radius: 20px;
+}
+
+
 //blog
 
 .post{
@@ -836,11 +845,11 @@ ul.social{
   .infoBlock {
     color: #FFF;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 0px;
     right:0px;
     text-align:center;
-    max-width: 25%;
+    max-width: 35%;
     padding-bottom: 0;
     margin:0 auto;
     background: #FFF;

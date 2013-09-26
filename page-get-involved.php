@@ -59,7 +59,7 @@ Template Name: Get Involved
         <div class='row'>
           <div class='col-lg-6 col-md-6'>
             <a href='#'>
-              <img class='full-width' src='<?php bloginfo('template_url'); ?>/images/video_img.png'>
+              <img class='full-width margin-bottom' src='<?php bloginfo('template_url'); ?>/images/video_img.png'>
             </a>
           </div>
           <div class='col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1'>

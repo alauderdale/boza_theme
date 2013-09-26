@@ -125,7 +125,7 @@ Template Name: Home
 <section>
   <div class='container'>
     <div class='row'>
-      <div class='col-lg-7 col-md-7'>
+      <div class='col-lg-7 col-md-7 col-sm-7'>
         <h2 class='padding-bottom thick-primary-border-bottom'>
           We are BOZA
         </h2>
@@ -137,9 +137,9 @@ Template Name: Home
         <?php endif; ?>
         <?php wp_reset_query(); ?>
       </div>
-      <div class='col-lg-5 col-md-5'>
+      <div class='col-lg-5 col-md-5 col-sm-5'>
         <?php if ( has_post_thumbnail() ): // check if the post has a Post Thumbnail assigned to it.?>
-          <?php  the_post_thumbnail('full', array('class' => 'pull-right')); ?>
+          <?php  the_post_thumbnail('full', array('class' => 'full-width pull-right')); ?>
       	<?php endif; ?>
       </div>
     </div>
@@ -152,7 +152,7 @@ Template Name: Home
         $postLoop = new WP_Query( array( 'post_type' => 'home-preview') );
       ?>
     	<?php while ( $postLoop->have_posts() ) : $postLoop->the_post(); ?>
-	      <div class='col-lg-4 col-md-4'>
+	      <div class='col-lg-4 col-md-4 col-sm-4'>
 	        <div class='padded'>
 	          <h2 class='double-margin-bottom'>
 	            <?php the_title(); ?> 
@@ -165,7 +165,7 @@ Template Name: Home
 	        </div>
 	      </div>
     	<?php endwhile; ?>
-      <div class='col-lg-4 col-md-4'>
+      <div class='col-lg-4 col-md-4 col-sm-4'>
         <div class='padded'>
           <h2 class='double-margin-bottom'>
             New & Events
