@@ -53,7 +53,7 @@ Template Name: Blog
                     <div class='pull-right'>
                       <i class='icon-comment-alt'></i>
                       <a href='<?php the_permalink(); ?>#comments'>
-                        <?php comments_number( 'no comments', 'one comment', '% comments' ); ?>
+                        <?php comments_number( 'no comments', '1 comment', '% comments' ); ?>
                       </a>
                     </div>
                   </div>

@@ -64,7 +64,7 @@ Template Name: Home
             </h1>
           </div>
           <div class='col-lg-3 col-md-3 col-sm-3'>
-            <img class='pull-right margin-bottom' src='<?php bloginfo('template_url'); ?>/images/mark_large.png'>
+            <img class='pull-right margin-bottom home-mark' src='<?php bloginfo('template_url'); ?>/images/mark_large.png'>
           </div>
         </div>
         <h2 class='double-margin-bottom'>

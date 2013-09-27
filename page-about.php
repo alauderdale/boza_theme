@@ -48,7 +48,7 @@ Template Name: About
               $aboutPointLoop = new WP_Query( array( 'post_type' => 'about-point') );
             ?>
             <?php while ( $aboutPointLoop->have_posts() ) : $aboutPointLoop->the_post(); ?>
-              <div class='row margin-bottom'>
+              <div class='row margin-bottom about-point'>
                 <div class='col-lg-6 col-md-6'>
                   <i class='<?php echo get_post_meta($post->ID, 'class', true); ?> circle-icon'>
                   </i>

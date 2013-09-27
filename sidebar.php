@@ -14,17 +14,17 @@
     </h5>
     <ul class='social list-inline'>
       <li>
-        <a href='#'>
+        <a href='<?php echo get_option('nt_facebook'); ?>'>
           F
         </a>
       </li>
       <li>
-        <a href='#'>
+        <a href='<?php echo get_option('nt_twitter'); ?>'>
           T
         </a>
       </li>
       <li>
-        <a href='#'>
+        <a href='<?php echo get_option('nt_linkedin'); ?>'>
           I
         </a>
       </li>

@@ -39,6 +39,9 @@ Template Name: Get Involved
               <?php the_content(); ?> 
             <?php endwhile; ?>
           <?php endif; ?>
+          <a class="btn-link" href="index.php?pagename=donate"> 
+            Donate Today
+          </a>
           </div>
           <div class='col-lg-5 col-md-5'>
             <?php if (have_posts()) : ?>

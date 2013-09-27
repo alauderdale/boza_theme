@@ -416,9 +416,15 @@ array( "name" => "Twitter URL",
 	"type" => "text",
 	"std" => ""),
 
-array( "name" => "Twitter URL",
+array( "name" => "Facebook URL",
 	"desc" => "Enter the link to your facebook page",
 	"id" => $shortname."_facebook",
+	"type" => "text",
+	"std" => ""),
+
+array( "name" => "Linkedin URL",
+	"desc" => "Enter the link to your Linkedin page",
+	"id" => $shortname."_linkedin",
 	"type" => "text",
 	"std" => ""),
 	

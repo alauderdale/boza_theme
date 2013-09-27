@@ -1138,7 +1138,7 @@ ul.social li a:hover {
     padding: 10px;
     height: 100%;
     max-height: 100%;
-    min-width: 40%;
+    min-width: 60%;
     left: 0;
     top: 0;
     right: auto;
@@ -1148,5 +1148,68 @@ ul.social li a:hover {
   .home-slider .infoBlock h3 {
     font-size: 14px;
     line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* Styles */
+  /* line 940, ../sass/style.css.scss */
+  body {
+    padding-top: 54px;
+  }
+
+  /* line 944, ../sass/style.css.scss */
+  .logo, .small-nav .logo {
+    background-size: 100% !important;
+    width: 100px !important;
+    background: no-repeat center center;
+    margin-top: 0 !important;
+  }
+
+  /* line 951, ../sass/style.css.scss */
+  .navbar {
+    padding-bottom: 0px;
+  }
+  /* line 953, ../sass/style.css.scss */
+  .navbar .navbar-toggle {
+    margin-top: 12px;
+  }
+
+  /* line 958, ../sass/style.css.scss */
+  section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  /* line 962, ../sass/style.css.scss */
+  section.hero h1 {
+    font-size: 2.2em;
+    line-height: 36px;
+  }
+  /* line 966, ../sass/style.css.scss */
+  section.hero h2 {
+    font-size: 1.5em;
+  }
+  /* line 970, ../sass/style.css.scss */
+  section.hero img.home-mark {
+    display: none;
+  }
+
+  /* line 979, ../sass/style.css.scss */
+  .about-point {
+    text-align: center;
+  }
+  /* line 981, ../sass/style.css.scss */
+  .about-point:first-of-type {
+    padding-top: 24px;
+  }
+
+  /* line 986, ../sass/style.css.scss */
+  .carousel-indicators {
+    margin-left: 0;
+  }
+
+  /* line 992, ../sass/style.css.scss */
+  .btn {
+    font-size: 1em;
   }
 }

@@ -921,7 +921,7 @@ ul.social{
       padding: 10px;
       height: 100%;
       max-height: 100%;
-      min-width: 40%;
+      min-width: 60%;
       left: 0;
       top: 0;
       right: auto;
@@ -932,5 +932,68 @@ ul.social{
        line-height: 17px;
     }
   }
+}
+
+@media screen and (max-width : 570px) {
+/* Styles */
+
+body{
+  padding-top:54px;
+}
+
+.logo, .small-nav .logo{
+  background-size:100%!important;
+  width:100px!important;
+  background:no-repeat center center;
+  margin-top:0!important;
+}
+
+.navbar{
+  padding-bottom:0px;
+  .navbar-toggle{
+    margin-top:$baseline/2;
+  }
+}
+
+section{
+  padding-top:$baseline;
+  padding-bottom:$baseline;
+  &.hero{
+    h1{
+      font-size:2.2em;
+      line-height:$baseline*1.5;
+    }
+    h2{
+      font-size:1.5em;
+    }
+    img{
+      &.home-mark{
+        display:none;
+      }
+    }
+  }
+}
+
+//about
+
+.about-point{
+  text-align:center;
+  &:first-of-type{
+    padding-top:$baseline;
+  }
+}
+
+.carousel-indicators{
+  margin-left:0;
+}
+
+//links
+
+.btn{
+  font-size:1em;
+}
+
+
+
 }
 

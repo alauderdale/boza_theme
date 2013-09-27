@@ -17,7 +17,7 @@ if ( post_password_required() ) { ?>
 
 					        <div class="media margin-bottom"> 
 					        	<div class="pull-left margin-right">
-					        		<?php echo get_avatar( ); ?> 
+					        		<?php echo get_avatar(get_the_author_ID()); ?> 
 					        	</div>
 					        	<div class="media-body">
 					        		<p class="media-heading">
