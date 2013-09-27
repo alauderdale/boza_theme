@@ -38,8 +38,8 @@
                     </div>
                     <div class='pull-right'>
                       <i class='icon-comment-alt'></i>
-                      <a href='#'>
-                        3 comments
+                      <a href='<?php the_permalink(); ?>#comments'>
+                        <?php comments_number( 'no comments', '1 comment', '% comments' ); ?>
                       </a>
                     </div>
                   </div>
@@ -51,9 +51,9 @@
                   <?php endif; ?>
 
                   <?php the_excerpt(); ?> 
-                  <a class='text-uppercase bold-font-name' href='<?php the_permalink(); ?>'>
+                  <a class='btn-link' href='<?php the_permalink(); ?>'>
                     <em>
-                      Read More ›
+                      Read More 
                     </em>
                   </a>
                 </article>

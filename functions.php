@@ -65,6 +65,16 @@
                 'public' => true,
             )
         );
+        register_post_type( 'volunteer-point',
+            array(
+                'labels' => array(
+                    'name' => __( 'volunteer point' ),
+                    'singular_name' => __( 'vol_point' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+            )
+        );
         register_post_type( 'social-block',
             array(
                 'labels' => array(

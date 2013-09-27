@@ -35,12 +35,12 @@ Template Name: Home
       <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
       <ul class='nav navbar-nav navbar-right home-social-nav'>
         <li class='social'>
-          <a class='btn btn-primary btn-sm' href='#'>
+          <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_facebook'); ?>'>
             F
           </a>
         </li>
         <li class='social'>
-          <a class='btn btn-primary btn-sm' href='#'>
+          <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_twitter'); ?>'>
             T
           </a>
         </li>
@@ -157,7 +157,10 @@ Template Name: Home
 	          <h2 class='double-margin-bottom'>
 	            <?php the_title(); ?> 
 	          </h2>
-	          <img class='img-circle margin-bottom' src='http://placehold.it/220x220'>
+            <img alt='' class='rsImg img-circle margin-bottom' src='<?php
+                        $imgsrc2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+                        echo $imgsrc2[0];
+                        ?>'>
 	          <?php the_content(); ?> 
 	          <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>" class='btn-link'>
 	            <?php echo get_post_meta($post->ID, 'title', true); ?>
