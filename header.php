@@ -8,12 +8,15 @@
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/royalslider.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="<?php bloginfo('template_url'); ?>/stylesheets/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/minimal-white/rs-minimal-white.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery-1.8.0.min.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.easing-1.3.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.royalslider.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascripts/helpers/jquery.fancybox-media.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/scripts.js" type="text/javascript"></script>
     <?php wp_head(); ?>
     <style>

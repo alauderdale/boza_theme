@@ -61,7 +61,8 @@ Template Name: Get Involved
       <div class='col-lg-12'>
         <div class='row'>
           <div class='col-lg-6 col-md-6'>
-            <a href='#'>
+            <a href='//www.youtube.com/embed/xAuQmJzt_q0' class="fb-video">
+              <p class="caption">Volunteer with BOZA</p>
               <img class='full-width margin-bottom' src='<?php bloginfo('template_url'); ?>/images/video_img.png'>
             </a>
           </div>

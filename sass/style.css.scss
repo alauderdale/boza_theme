@@ -335,6 +335,12 @@ img{
     height:auto;
   }
 }
+p.caption{
+  background-color:$black-color;
+  color:white;
+  margin-bottom:0;
+  padding:$baseline/4;
+}
 
 .display-block{
     display:block;
@@ -584,6 +590,7 @@ ul.inline{
     @include transition-duration(.3s);
   }
 }
+
 
 .navbar{
   font-family:$bold-font-name;
@@ -954,6 +961,7 @@ ul.social{
     width:100px!important;
     background:no-repeat center center;
     margin-top:0!important;
+    margin-left:15px;
   }
 
   .navbar{
@@ -969,7 +977,7 @@ ul.social{
     &.hero{
       h1{
         font-size:2.5em;
-        line-height:$baseline*1.5;
+        line-height:$baseline*1.8;
       }
       h2{
         font-size:1.5em;

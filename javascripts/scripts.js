@@ -37,6 +37,18 @@ $(document).ready(function(){
   $('.test-item:first-of-type').addClass('active');
 
   $('ol.carousel-indicators li:first-of-type').addClass('active');
+
+  //fancybox
+
+  $(".fancybox").fancybox();
+
+  $('.fb-video').fancybox({
+        padding: 0,
+        helpers: {
+            media: {}
+        }
+    });
+
     
 
 });
