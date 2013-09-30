@@ -1159,6 +1159,16 @@ ul.social li a:hover {
   }
 
   /* line 944, ../sass/style.css.scss */
+  .navbar.home-nav {
+    padding-bottom: 12px;
+  }
+  /* line 946, ../sass/style.css.scss */
+  .navbar.home-nav a.logo {
+    margin-left: 15px;
+    margin-top: 15px !important;
+  }
+
+  /* line 952, ../sass/style.css.scss */
   .logo, .small-nav .logo {
     background-size: 100% !important;
     width: 100px !important;
@@ -1166,49 +1176,49 @@ ul.social li a:hover {
     margin-top: 0 !important;
   }
 
-  /* line 951, ../sass/style.css.scss */
+  /* line 959, ../sass/style.css.scss */
   .navbar {
     padding-bottom: 0px;
   }
-  /* line 953, ../sass/style.css.scss */
+  /* line 961, ../sass/style.css.scss */
   .navbar .navbar-toggle {
     margin-top: 12px;
   }
 
-  /* line 958, ../sass/style.css.scss */
+  /* line 966, ../sass/style.css.scss */
   section {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-  /* line 962, ../sass/style.css.scss */
+  /* line 970, ../sass/style.css.scss */
   section.hero h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     line-height: 36px;
   }
-  /* line 966, ../sass/style.css.scss */
+  /* line 974, ../sass/style.css.scss */
   section.hero h2 {
     font-size: 1.5em;
   }
-  /* line 970, ../sass/style.css.scss */
+  /* line 978, ../sass/style.css.scss */
   section.hero img.home-mark {
     display: none;
   }
 
-  /* line 979, ../sass/style.css.scss */
+  /* line 987, ../sass/style.css.scss */
   .about-point {
     text-align: center;
   }
-  /* line 981, ../sass/style.css.scss */
+  /* line 989, ../sass/style.css.scss */
   .about-point:first-of-type {
     padding-top: 24px;
   }
 
-  /* line 986, ../sass/style.css.scss */
+  /* line 994, ../sass/style.css.scss */
   .carousel-indicators {
     margin-left: 0;
   }
 
-  /* line 992, ../sass/style.css.scss */
+  /* line 1000, ../sass/style.css.scss */
   .btn {
     font-size: 1em;
   }

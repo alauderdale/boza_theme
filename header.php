@@ -28,38 +28,40 @@
   </head>
 
   <body>
-  <nav class='navbar navbar-default navbar-fixed-top main-nav ' role='navigation'>
-    <div class='container'>
-      <div class='navbar-header'>
-        <button class='navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
-          <span class='sr-only'>Toggle navigation</span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-        <a class='navbar-brand logo double-margin-right' href='<?php echo get_option('home'); ?>'></a>
+  <header>
+    <nav class='navbar navbar-default navbar-fixed-top main-nav ' role='navigation'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand logo double-margin-right' href='<?php echo get_option('home'); ?>'></a>
+        </div>
+        <div class='collapse navbar-collapse navbar-ex1-collapse'>
+  <!--         main menu -->
+          <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='social'>
+              <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_facebook'); ?>'>
+                F
+              </a>
+            </li>
+            <li class='social'>
+              <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_twitter'); ?>'>
+                T
+              </a>
+            </li>
+            <li>
+              <a class='btn btn-primary btn-sm' href='index.php?pagename=donate'>
+                Donate
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class='collapse navbar-collapse navbar-ex1-collapse'>
-<!--         main menu -->
-        <?php wp_nav_menu( array('menu' => 'Main', 'container' => '', 'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>' )); ?>
-        <ul class='nav navbar-nav navbar-right'>
-          <li class='social'>
-            <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_facebook'); ?>'>
-              F
-            </a>
-          </li>
-          <li class='social'>
-            <a class='btn btn-primary btn-sm' href='<?php echo get_option('nt_twitter'); ?>'>
-              T
-            </a>
-          </li>
-          <li>
-            <a class='btn btn-primary btn-sm' href='index.php?pagename=donate'>
-              Donate
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <div class='shrink-nav'></div>
